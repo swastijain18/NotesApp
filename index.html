@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="margin-left: 60px;">Notes App</a>
+            <form class="d-flex">
+                <input class="form-control me-2" id="searchTxt" type="search" placeholder="Search Title" aria-label="Search">
+            </form>
+        </div>
+    </nav>
+
+    <div class="container my-3">
+        <h1>WHATS IN YOUR MIND!</h1>
+        <div class="card my-4">
+            <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text"><input type="text" id="addTtl" placeholder="Enter Title"></p>
+                <h5 class="card-title">Write the Note</h5>
+                <p class="card-text"><textarea id="addTxt" style="width: 100%;" placeholder="Notes..."></textarea></p>
+                
+                <button class="btn btn-primary" id="addBtn">Add Notes</button>
+            </div>
+        </div>
+        <hr>
+        <h2>YOUR NOTES</h2>
+        <div id="notes" class="row container-fluid"></div>
+    </div>
+
+    <script src="proj.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
